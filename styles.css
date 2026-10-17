@@ -1,0 +1,141 @@
+/* MG McCoy author site. No external requests: system fonts, no scripts, no analytics. */
+:root {
+  --ground: #121214;
+  --panel: #1b1b1f;
+  --line: #2a2a30;
+  --bone: #e9e4d8;
+  --ink: #f4f1ea;
+  --dim: #9b968c;
+  --cold: #7f8a96;
+  --accent: #c9b78a;
+  --max: 960px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+a { color: var(--accent); }
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(18, 18, 20, 0.94);
+  border-bottom: 1px solid var(--line);
+}
+.wordmark {
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  font-size: 14px; color: var(--bone); text-decoration: none;
+}
+.nav nav { display: flex; gap: 22px; }
+.nav nav a {
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  color: var(--dim); text-decoration: none; font-size: 12px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+}
+.nav nav a:hover { color: var(--ink); }
+
+main { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+.kicker {
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  color: var(--cold); letter-spacing: 0.22em; text-transform: uppercase;
+  font-size: 12px; margin-bottom: 14px;
+}
+h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.05; font-weight: 400; letter-spacing: -0.01em; }
+h2 { font-size: clamp(26px, 4vw, 36px); line-height: 1.1; font-weight: 400; margin-bottom: 14px; }
+p { max-width: 62ch; color: var(--bone); }
+p + p { margin-top: 14px; }
+.muted { color: var(--dim); }
+.small { font-size: 15px; }
+
+.hero { padding: 72px 0 48px; }
+.hero .line { margin-top: 18px; font-size: 20px; color: var(--dim); }
+
+/* Landing page layout */
+.landing { display: grid; grid-template-columns: 1fr 320px; gap: 44px; align-items: start; padding: 56px 0 40px; }
+.landing .cover { width: 100%; height: auto; border: 1px solid var(--line); display: block; }
+.landing h1 { margin-bottom: 18px; }
+.disclosure {
+  margin-top: 22px; padding: 14px 16px; border-left: 3px solid var(--cold);
+  background: var(--panel); font-size: 15px; color: var(--bone);
+}
+
+/* Forms: plain HTML POST to EmailOctopus. No script, no cookie. */
+.signup { margin-top: 28px; padding: 22px; background: var(--panel); border: 1px solid var(--line); max-width: 60ch; }
+.signup h3 { font-size: 22px; font-weight: 400; margin-bottom: 8px; }
+.signup label { display: block; color: var(--bone); margin-bottom: 12px; }
+.signup .row { display: flex; gap: 10px; flex-wrap: wrap; }
+.signup input[type="email"] {
+  flex: 1 1 240px; min-width: 0; padding: 12px 14px; font: inherit; font-size: 16px;
+  background: var(--ground); color: var(--ink); border: 1px solid var(--line);
+}
+.signup input[type="email"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.signup button {
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;
+  padding: 12px 22px; background: var(--accent); color: var(--ground);
+  border: 1px solid var(--accent); cursor: pointer;
+}
+.signup button:hover { background: var(--ink); border-color: var(--ink); }
+.signup .fine { margin-top: 10px; font-size: 13px; color: var(--dim); max-width: none; }
+
+/* Store buttons live below the fold on purpose. */
+.stores { padding: 36px 0 56px; border-top: 1px solid var(--line); }
+.stores .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.store {
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase;
+  text-decoration: none; color: var(--ink); padding: 10px 16px;
+  border: 1px solid var(--line); background: var(--panel);
+}
+.store:hover { border-color: var(--accent); }
+
+/* Book cards on the home and series pages */
+.books { display: grid; gap: 18px; padding: 0 0 56px; }
+.book {
+  display: grid; grid-template-columns: 140px 1fr; gap: 26px; align-items: start;
+  background: var(--panel); border: 1px solid var(--line); padding: 24px;
+}
+.book img, .book .no-cover { width: 140px; height: 140px; object-fit: cover; border: 1px solid var(--line); }
+.book .no-cover {
+  display: grid; place-items: center; color: var(--dim); font-size: 13px; text-align: center;
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.book h3 { font-size: 24px; font-weight: 400; margin-bottom: 6px; }
+.book .status {
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cold); margin-bottom: 10px;
+}
+.book .more { margin-top: 12px; }
+
+.quote { padding: 40px 0; border-top: 1px solid var(--line); }
+.quote blockquote { font-size: clamp(22px, 3vw, 30px); line-height: 1.3; max-width: 30ch; color: var(--ink); }
+.quote cite { display: block; margin-top: 12px; font-style: normal; color: var(--dim); font-size: 15px; }
+
+.legal-text { padding: 48px 0 64px; }
+.legal-text h2 { margin-top: 28px; font-size: 24px; }
+
+footer {
+  border-top: 1px solid var(--line); padding: 24px 20px 40px;
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  color: var(--dim); font-size: 13px;
+}
+footer .inner { max-width: var(--max); margin: 0 auto; display: grid; gap: 8px; }
+footer a { color: var(--dim); }
+
+.wordmark, .nav nav a { white-space: nowrap; }
+
+@media (max-width: 760px) {
+  .landing { grid-template-columns: 1fr; }
+  .landing .cover { max-width: 320px; }
+  .book { grid-template-columns: 1fr; }
+  .nav { padding: 14px 16px; }
+  .nav nav { gap: 12px; }
+  .nav nav a { font-size: 11px; letter-spacing: 0.1em; }
+  main { padding: 0 16px; }
+}
