@@ -68,7 +68,7 @@ p + p { margin-top: 14px; }
 /* Forms: plain HTML POST to EmailOctopus. No script, no cookie. */
 .signup { margin-top: 28px; padding: 22px; background: var(--panel); border: 1px solid var(--line); max-width: 60ch; }
 .signup h3 { font-size: 22px; font-weight: 400; margin-bottom: 8px; }
-.signup label { display: block; color: var(--bone); margin-bottom: 12px; }
+.signup label, .signup .lead { display: block; color: var(--bone); margin-bottom: 12px; max-width: none; }
 .signup .row { display: flex; gap: 10px; flex-wrap: wrap; }
 .signup input[type="email"] {
   flex: 1 1 240px; min-width: 0; padding: 12px 14px; font: inherit; font-size: 16px;

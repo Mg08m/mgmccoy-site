@@ -42,20 +42,14 @@
 
         <div class="signup" id="chapter">
           <h3>Hear Chapter One free</h3>
+          <p class="lead">Enter your email and Chapter One, "The Silence Protocol", is in your inbox in a minute. Then four short emails about the book over two weeks, and one email when a new book comes out.</p>
           <!--
-            EmailOctopus plain HTML form, "MG McCoy readers" list, tag scribe-free-chapter.
-            Owner: paste the action URL and field name from EmailOctopus > list > Forms > "HTML form".
-            Set the form's success redirect to https://AUTHOR_DOMAIN/scribe-2106/check-your-inbox/
-            The automation on this tag sends emails/01 to 05 from the content-launch repo.
+            EmailOctopus form "MG McCoy: free chapter and new releases" (tags scribe-free-chapter, mg-mccoy-readers).
+            The script renders the form and sets no cookies or storage. One form serves the whole site (free plan limit).
           -->
-          <form method="post" action="EMAILOCTOPUS_READERS_FORM_ACTION_URL">
-            <label for="scribe-email">Enter your email and Chapter One, "The Silence Protocol", is in your inbox in a minute. Then four short emails about the book over two weeks, and news of new releases after that.</label>
-            <div class="row">
-              <input id="scribe-email" type="email" name="field_0" required autocomplete="email" placeholder="you@example.com" />
-              <button type="submit">Send me Chapter One</button>
-            </div>
-            <p class="fine">We send a confirmation first; nothing arrives until you click it. Unsubscribe in any email. <a href="/privacy/">Privacy</a>.</p>
-          </form>
+          <script async src="https://eomail5.com/form/f71cac38-cb0c-11f1-92c1-29ba55965d88.js" data-form="f71cac38-cb0c-11f1-92c1-29ba55965d88"></script>
+          <noscript><p class="fine">The sign-up form needs JavaScript. Email <a href="mailto:hello@lcmgproductions.com?subject=Scribe%202106%20Chapter%20One">hello@lcmgproductions.com</a> and we will send Chapter One by hand.</p></noscript>
+          <p class="fine">We send a confirmation first; nothing arrives until you click it. Unsubscribe in any email. <a href="/privacy/">Privacy</a>.</p>
         </div>
 
         <p class="disclosure">
