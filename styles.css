@@ -101,7 +101,8 @@ p + p { margin-top: 14px; }
   display: grid; grid-template-columns: 140px 1fr; gap: 26px; align-items: start;
   background: var(--panel); border: 1px solid var(--line); padding: 24px;
 }
-.book img, .book .no-cover { width: 140px; height: 140px; object-fit: cover; border: 1px solid var(--line); }
+.book img { width: 140px; height: auto; display: block; border: 1px solid var(--line); }
+.book .no-cover { width: 140px; height: 140px; border: 1px solid var(--line); }
 .book .no-cover {
   display: grid; place-items: center; color: var(--dim); font-size: 13px; text-align: center;
   font-family: "Helvetica Neue", Arial, system-ui, sans-serif; letter-spacing: 0.1em; text-transform: uppercase;

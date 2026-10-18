@@ -28,8 +28,8 @@ when a redirect is preferred.
 
 ## Still open (owner)
 1. Add the registered office line to the footers once filed.
-2. Covers: `assets/scribe-2106-cover-800.jpg` is the v6 square cover. `kept-fire-cover-600.jpg` is a DRAFT.
-   The Bound Water and The Ordered Stone have no cover file here yet; the cards show a text placeholder.
+2. Covers: `scribe-2106-cover-800.jpg` (v6 square), `the-bound-water-cover-600.jpg` (revised edition, portrait),
+   `kept-fire-cover-600.jpg` (final square audiobook cover, 18 Oct 2026). The Ordered Stone still shows a text placeholder.
 3. Point Linktree and every social bio at https://mgmccoy.co.uk/scribe-2106/ (or the home page).
 4. Once HTTPS is enforced on Pages, swap the Linktree links in EmailOctopus emails 03-05 for the site.
 
