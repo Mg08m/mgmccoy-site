@@ -20,7 +20,7 @@ Success behaviour is a message shown in the form ("Check your inbox..."); `/scri
 when a redirect is preferred.
 
 ## Before go-live (owner)
-1. Replace every `AUTHOR_DOMAIN` with the real domain (`grep -rl AUTHOR_DOMAIN .`).
+1. Replace every `mgmccoy.co.uk` with the real domain (`grep -rl mgmccoy.co.uk .`).
 2. In EmailOctopus, click the sender-verification link sent to hello@lcmgproductions.com, then switch on double opt-in
    (Contacts > Consent & customisation > Double opt-in; the email text is already filled in).
 3. Upload Chapter One to a private path (or BookFunnel) and build the automation on tag `scribe-free-chapter`
