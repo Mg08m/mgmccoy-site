@@ -19,15 +19,19 @@ page says so. The separate Kept Fire waiting list was dropped: readers-list memb
 Success behaviour is a message shown in the form ("Check your inbox..."); `/scribe-2106/check-your-inbox/` is kept for
 when a redirect is preferred.
 
-## Before go-live (owner)
-1. Replace every `mgmccoy.co.uk` with the real domain (`grep -rl mgmccoy.co.uk .`).
-2. In EmailOctopus, click the sender-verification link sent to hello@lcmgproductions.com, then switch on double opt-in
-   (Contacts > Consent & customisation > Double opt-in; the email text is already filled in).
-3. Upload Chapter One to a private path (or BookFunnel) and build the automation on tag `scribe-free-chapter`
-   from `content-launch/audiobooks/books/scribe-2106/emails/`.
-4. Add the registered office line to the footers once filed.
-5. Covers: `assets/scribe-2106-cover-800.jpg` is the v6 square cover. `kept-fire-cover-600.jpg` is a DRAFT.
+## Hosting (live from 18 Oct 2026)
+- Repo `Mg08m/mgmccoy-site`, GitHub Pages from `main` root, custom domain `mgmccoy.co.uk` (CNAME file).
+- Cloudflare DNS, all DNS only: A @ -> 185.199.108.153 / 109.153 / 110.153 / 111.153; CNAME www -> mg08m.github.io.
+- Edit in the repo, push `main`; Pages rebuilds in under a minute.
+- EmailOctopus: sender verified, double opt-in on, both Chapter One automations active (see
+  `content-launch/audiobooks/books/scribe-2106/emails/README.md`).
+
+## Still open (owner)
+1. Add the registered office line to the footers once filed.
+2. Covers: `assets/scribe-2106-cover-800.jpg` is the v6 square cover. `kept-fire-cover-600.jpg` is a DRAFT.
    The Bound Water and The Ordered Stone have no cover file here yet; the cards show a text placeholder.
+3. Point Linktree and every social bio at https://mgmccoy.co.uk/scribe-2106/ (or the home page).
+4. Once HTTPS is enforced on Pages, swap the Linktree links in EmailOctopus emails 03-05 for the site.
 
 ## Local preview
 From the content-launch folder: `.claude/launch.json` has an `author-site` entry (`python -m http.server 8766`).
