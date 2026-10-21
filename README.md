@@ -5,6 +5,7 @@ Intended host: GitHub Pages (new public repo, `main`, root), custom domain to be
 
 ## Pages
 - `/` author home, four book cards, readers-list form
+- `/kept-ground/` the Kept Ground landing page (added 21 Oct 2026, branch `kept-ground-page`): headline, five-minute audiobook sample, readers-list form, AI-narration disclosure, Amazon ebook button; audiobook and paperback buttons wait for their store URLs
 - `/scribe-2106/` the Scribe landing page: headline, free Chapter One form, AI-narration disclosure, store buttons below the fold
 - `/scribe-2106/check-your-inbox/` form success page (set as the EmailOctopus form redirect)
 - `/bound-water/` series page, reading order, Kept Fire waiting-list form
@@ -27,6 +28,7 @@ when a redirect is preferred.
   `content-launch/audiobooks/books/scribe-2106/emails/README.md`).
 
 ## Still open (owner)
+0. Kept Ground: supply the audiobook store URL (and paperback once live) for the buttons on `/kept-ground/`; decide whether the readers-list form gets a Kept Ground tag/automation (free plan: one form, 3 automations, 2 in use), and update the form lead text on that page to match. The home hero still reads "Four standalone worlds"; Kept Ground makes five.
 1. Add the registered office line to the footers once filed.
 2. Covers: `scribe-2106-cover-800.jpg` (v6 square), `the-bound-water-cover-600.jpg` (revised edition, portrait),
    `kept-fire-cover-600.jpg` (final square audiobook cover, 18 Oct 2026). The Ordered Stone still shows a text placeholder.
