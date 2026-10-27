@@ -6,6 +6,7 @@ Intended host: GitHub Pages (new public repo, `main`, root), custom domain to be
 ## Pages
 - `/` author home, four book cards, readers-list form
 - `/kept-ground/` the Kept Ground landing page (added 21 Oct 2026, branch `kept-ground-page`): headline, five-minute audiobook sample, readers-list form, AI-narration disclosure, Amazon ebook and Spotify audiobook buttons (23 Oct 2026); the paperback button waits for its store URL
+- `/kept-ground/chapter-1/` the complete Chapter 1 of Kept Ground, "The Rot", free to read with no sign-up (added 27 Oct 2026); the landing page's "Read a free chapter" button points here. Text is verbatim from the published manuscript: do not edit the prose in the HTML, change the manuscript and regenerate.
 - `/scribe-2106/` the Scribe landing page: headline, free Chapter One form, AI-narration disclosure, store buttons below the fold
 - `/scribe-2106/check-your-inbox/` form success page (set as the EmailOctopus form redirect)
 - `/bound-water/` series page, reading order, Kept Fire waiting-list form
